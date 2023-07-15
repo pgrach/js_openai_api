@@ -12,7 +12,7 @@ async function getResponse() { // define an asynchronous function (it can perfor
         method: "POST", // this method is used because we want to send our question to the server (to OpenAI's API)
         headers: { // this object includes HTTP headers that I want to include with my request
             "Content-Type": "application/json", // tells the server that I am sending JSON data
-            "Authorization": "Bearer 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" // how you provide your OpenAI API key for authentication. Replace YOUR_OPENAI_KEY with my actual key (SECURITY ISSUE)
+            "Authorization": "Bearer YOUR_OPENAI_KEY" // how you provide your OpenAI API key for authentication. Replace YOUR_OPENAI_KEY with my actual key (SECURITY ISSUE)
         },
         body: JSON.stringify({ // The data that I am sending to the server. We convert the JS object into a JSON string
             "model": "gpt-3.5-turbo",
